@@ -1,0 +1,393 @@
+* {
+  transition: all 0.5s;
+}
+
+:root {
+  --one: #77B5FE;
+  --two: #E44436;
+  --three: #F57421;
+  --four: #EDCA15;
+}
+
+@keyframes slide {
+  to {
+    background-position: 1000vw;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  display: block;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+article {
+  transition: all 0.2s;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow";
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
+  height: 60px;
+  padding: 10px 10px;
+  flex-direction: row;
+  background: white;
+  font-weight: 900;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+nav section {
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  margin: 0 5px;
+  display: flex;
+  padding: 10px;
+  width: auto;
+  transform: skew(-15deg);
+  justify-content: center;
+  align-items: center;
+}
+
+nav section:nth-child(1) {
+  justify-content: flex-start;
+  background-color: var(--one);
+  flex: 5;
+}
+
+nav section:nth-child(2) {
+  background-color: var(--two);
+  flex: 1;
+}
+
+nav section:nth-child(3) {
+  background-color: var(--three);
+  flex: 1;
+}
+
+nav section:nth-child(4) {
+  background-color: var(--four);
+  flex: 1;
+}
+
+#mondrian-container {
+  position: relative;
+  height: 100vh;
+}
+
+#mondrian {
+  display: grid;
+  grid-template-areas:
+  "A B B D"
+  "C B B E"
+  "C F G G"
+  "H F G G"
+  "I I I I"
+  "J J J K"
+  "J J J L"
+  "M N O L"
+  "P P O Q";
+  grid-gap: 10px;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+  top: 0;
+  margin: 0 auto;
+  height: 200vmin;
+}
+
+#mondrian article {
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+#mondrian-1, #mondrian-4, #mondrian-7, #mondrian-15, #mondrian-13 {
+  background-color: var(--one);
+}
+
+#mondrian-2, #mondrian-5, #mondrian-8, #mondrian-16 {
+  border: 10px solid  var(--two);
+}
+
+#mondrian-3, #mondrian-9, #mondrian-12, #mondrian-14 {
+  border: 10px solid  var(--four);
+}
+
+#mondrian-6, #mondrian-10, #mondrian-11, #mondrian-17 {
+  border: 10px solid var(--three);
+}
+
+#mondrian-1 {
+  grid-area: A;
+}
+
+#mondrian-2 {
+  grid-area: B;
+  background-image: url(assets/1.jpeg);
+}
+
+#mondrian-3 {
+  grid-area: C;
+  background-image: url(assets/2.jpeg);
+}
+
+#mondrian-4 {
+  grid-area: D;
+}
+
+#mondrian-5 {
+  grid-area: E;
+  background-image: url(assets/3.jpeg);
+}
+
+#mondrian-6 {
+  grid-area: F;
+  background-image: url(assets/4.jpeg);
+}
+
+#mondrian-7 {
+  grid-area: G;
+}
+
+#mondrian-8 {
+  grid-area: H;
+  background-image: url(assets/5.jpeg);
+}
+
+#mondrian-9 {
+  grid-area: I;
+  background-image: url(assets/6.jpeg);
+}
+
+#mondrian-10 {
+  grid-area: J;
+  background-image: url(assets/7.jpeg);
+}
+
+#mondrian-11 {
+  grid-area: K;
+}
+
+#mondrian-12 {
+  grid-area: L;
+}
+
+#mondrian-13 {
+  grid-area: M;
+}
+
+#mondrian-14 {
+  grid-area: N;
+}
+
+#mondrian-15 {
+  grid-area: O;
+}
+
+#mondrian-16 {
+  grid-area: P;
+}
+
+#mondrian-17 {
+  grid-area: Q;
+}
+
+#mondrian-container aside {
+  position: sticky;
+  top: 60px;
+  text-align: center;
+  margin: 0 auto;
+  border: 10px solid white;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  max-height: 25vh;
+  width: 100vw;
+  font-size: 48px;
+  z-index: 2;
+  background: var(--three);
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+#music-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#music-sidebar {
+  background: var(--two);
+  position: relative;
+  height: 150vh;
+  width: 25vw;
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+
+#music-sidebar div {
+  position: sticky;
+  padding: 10px;
+  top: 50vh;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+
+#music {
+  height: 150vh;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#music article {
+  flex: 1;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 700;
+  text-shadow: 5px 5px 2px grey;
+  font-size: 36px;
+  font-style: italic;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#music-1 {
+  box-sizing: border-box;
+  background-image: url(https://i1.sndcdn.com/artworks-hk1VYieZijA61wnE-uDpAEw-t500x500.jpg);
+}
+
+#music-2 {
+  background-image: url(https://f4.bcbits.com/img/0007253487_100.png);
+}
+
+#music-3 {
+  background-image: url(https://i1.sndcdn.com/avatars-000475815972-vp310e-t500x500.jpg);
+}
+
+#adlai {
+  width: 100vw;
+  height: 150vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, rgba(161, 196, 253, 0.2) 0%, rgba(194, 233, 251, 0.2) 100%), url(https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/38008025_1894628063937802_2595083153651531776_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_ohc=1sxbVNnOPfUAX9-vEmr&_nc_ht=scontent-den4-1.xx&oh=c2d4aed01df6f2a148064042b51e5553&oe=615A8C37);
+}
+
+#adlai div {
+  display: flex;
+  position: sticky;
+  height: 300px;
+  text-align: center;
+  width: 50vw;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+  box-sizing: border-box;
+  border: 5px solid white;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  top: 30vh;
+  font-weight: 900;
+  background-size: 1000vw;
+  animation: slide 10s linear infinite;
+  background-image: linear-gradient(to right, var(--one), #00CEFF, #00E3F1, #00CEFF, var(--one), #00CEFF, var(--one));
+}
+
+@media (hover: hover) {
+  a:hover {
+    border-bottom: 3px solid white;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #adlai div {
+    font-size: 32px;
+    width: 75vw;
+    max-height: 30vh
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 20px;
+  }
+
+  nav section {
+    flex: 1 !important;
+  }
+
+  nav section:nth-of-type(1) {
+    justify-content: center;
+  }
+
+  #adlai {
+    margin-bottom: 100px;
+  }
+
+  #adlai div {
+    font-size: 28px;
+  }
+
+  #music-container {
+    flex-direction: column-reverse;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #music {
+    width: 100vw;
+  }
+
+  #music-sidebar {
+    width: 100vw;
+  }
+
+  #music article {
+    height: 50vh;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  #adlai div {
+    font-size: 24px;
+    width: 75vw;
+  }
+}
