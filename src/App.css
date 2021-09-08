@@ -37,6 +37,7 @@ body {
   font-family: "Barlow";
   overflow-x: hidden;
   box-sizing: border-box;
+  background: white;
 }
 
 nav {
@@ -249,7 +250,7 @@ nav section:nth-child(4) {
 
 #music-sidebar div {
   position: sticky;
-  padding: 10px;
+  padding: 48px 10px;
   top: 50vh;
   box-sizing: border-box;
   text-align: center;
@@ -377,6 +378,7 @@ nav section:nth-child(4) {
 
   #music-sidebar {
     width: 100vw;
+    position: sticky;
   }
 
   #music article {

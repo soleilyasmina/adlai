@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Header from "./components/Header";
 import { baseURL, config, sortByCreatedTime } from "./services";
 import "./App.css";
 
@@ -16,20 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav id="nav">
-        <section>
-          <a href="#adlai">ADLAI</a>
-        </section>
-        <section>
-          <a href="#music">MUSIC</a>
-        </section>
-        <section>
-          <a href="#mondrian">GALLERY</a>
-        </section>
-        <section>
-          <a href="#contact">MEDIA</a>
-        </section>
-      </nav>
+      <Header />
       <section id="adlai">
         <div>ADLAI is a Chicago-based producer and artist.</div>
       </section>
@@ -46,23 +34,23 @@ function App() {
       <main id="mondrian-container">
         <aside>GALLERY</aside>
         <section id="mondrian">
-        <article id="mondrian-1"></article>
-        <article id="mondrian-2"></article>
-        <article id="mondrian-3"></article>
-        <article id="mondrian-4"></article>
-        <article id="mondrian-5"></article>
-        <article id="mondrian-6"></article>
-        <article id="mondrian-7"></article>
-        <article id="mondrian-8"></article>
-        <article id="mondrian-9"></article>
-        <article id="mondrian-10"></article>
-        <article id="mondrian-11"></article>
-        <article id="mondrian-12"></article>
-        <article id="mondrian-13"></article>
-        <article id="mondrian-14"></article>
-        <article id="mondrian-15"></article>
-        <article id="mondrian-16"></article>
-        <article id="mondrian-17"></article>
+          <article id="mondrian-1"></article>
+          <article id="mondrian-2"></article>
+          <article id="mondrian-3"></article>
+          <article id="mondrian-4"></article>
+          <article id="mondrian-5"></article>
+          <article id="mondrian-6"></article>
+          <article id="mondrian-7"></article>
+          <article id="mondrian-8"></article>
+          <article id="mondrian-9"></article>
+          <article id="mondrian-10"></article>
+          <article id="mondrian-11"></article>
+          <article id="mondrian-12"></article>
+          <article id="mondrian-13"></article>
+          <article id="mondrian-14"></article>
+          <article id="mondrian-15"></article>
+          <article id="mondrian-16"></article>
+          <article id="mondrian-17"></article>
         </section>
       </main>
     </div>
